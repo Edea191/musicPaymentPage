@@ -1,0 +1,146 @@
+
+:root{
+    --paysection-color:#D8F9FD;
+
+}
+
+*{
+padding: 0px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+background-image: url(./images/pattern-background-desktop.svg);
+}
+
+header{
+    font-weight: bolder;
+    font-size: 30px;
+    color: #004A9D;
+}
+#main{
+    display: flex;
+    background-color: aliceblue;
+    flex-direction: column;
+    max-width: 600px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-bottom: aliceblue solid 1px;
+    border-radius: 20px;
+
+    }
+    #image img{     
+        width: 100%;
+        height: auto;
+        border-top: blue solid 1px;
+        border-top-left-radius:20px;
+        border-top-right-radius:20px;
+
+    }
+
+    #main-information{
+        text-align: center;
+        margin: 30px;
+
+
+    }
+
+
+
+
+    #pay-section{
+        background-color: var(--paysection-color);
+        border: 1px var(--paysection-color) solid;
+        border-radius: 20px;
+        display: grid;
+        grid-template-columns: 10% 30% 5% 10%;
+        gap:20px 50px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        padding: 10px;   
+
+    }
+
+    #p1{
+        font-weight: bolder;
+    }
+
+    #p1, #p2{
+        line-height: 0px;
+    }
+
+
+
+    #pay-section img{
+        grid-column: 1/1;
+        
+        width: 50px;
+        height: 60px;
+        align-self: center;
+   
+    }
+
+    #change{
+        grid-column: 4/4;
+        align-self: center;
+        justify-self: stretch;
+
+    }
+
+    #button-section{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 5px;
+
+    }
+    #ProceedtoPaymenButton, #CancelOrderButton{
+        padding: 10px;
+        text-align: center;
+        width: auto;
+        border-radius: 10px;
+
+    }
+
+    #CancelOrderButton{
+        color: #CDCDCD;
+        border:#F9F9F9;
+        background-color: #F9F9F9;
+
+    }   
+
+    #ProceedtoPaymenButton{
+     background-color: #208AFC;
+    border:#208AFC;
+    color: #F1F2F2; }
+    
+    #ProceedtoPaymenButton:hover{
+     background-color: #67C0FF;
+     border:#67C0FF;
+    }
+
+    #CancelOrderButton:hover{
+    background-color:#F1F1F1;
+    border:#F1F1F1;
+}
+    
+
+
+@media (max-width: 800px) {
+
+body{
+
+ background-image: url(./images/pattern-background-mobile.svg);  
+}
+
+#main{
+    
+    margin:10px 10px 10px 10px;
+}
+
+}
